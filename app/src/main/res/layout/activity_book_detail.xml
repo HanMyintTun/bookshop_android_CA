@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bookshop.sa46team09.A.BookDetailActivity"
+    android:textSize="14dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="173dp"
+        android:layout_gravity="center"
+        android:textSize="14dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:paddingTop="20dp"
+        android:layout_toRightOf="@id/imageView">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Title"
+        android:layout_alignBaseline="@+id/BookID"
+        android:layout_toRightOf="@id/imageView"
+        android:padding="6dp"
+
+        android:text="ID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/BookID"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+
+                android:background="@android:color/background_light"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dp" />
+        </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Title"
+        android:layout_toEndOf="@+id/imageView"
+
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+
+        <EditText
+            android:id="@+id/Title"
+            android:layout_width="182dp"
+            android:layout_height="100dp"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14dp" />
+       </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:id="@+id/table1"
+        android:layout_below="@id/imageView">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="6dp"
+                android:textSize="14dp"
+                android:text="CategoryID" />
+
+            <EditText
+                android:id="@+id/CategoryID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:inputType="none"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dp"
+                tools:background="@android:color/background_light" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="6dp"
+                android:text="CategoryName"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/CategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="6dp"
+                android:text="ISBN"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/ISBN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="6dp"
+                android:text="Author"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/Author"
+                android:textSize="14dp"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="6dp"
+                android:text="Stock"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/Stock"
+                android:textSize="14dp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="6dp"
+                android:text="Price"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/Price"
+                android:textSize="14dp"/>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="46dp"
+        android:background="#444646"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:onClick="onClick"
+
+        android:text="Update"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>
